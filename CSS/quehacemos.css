@@ -1,0 +1,154 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    padding: 1rem 0;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_links {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav_links:hover,
+.nav_links.active {
+    color: #00c853;
+}
+
+main.que-hacemos {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Soluciones */
+.soluciones {
+    margin-bottom: 3rem;
+}
+
+.soluciones h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contenedor-soluciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.solucion {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.solucion:hover {
+    transform: translateY(-5px);
+}
+
+.solucion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Beneficios */
+.beneficios {
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.beneficios p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.imagen-beneficios {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-soluciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro h1, .soluciones h2, .beneficios h2 {
+        font-size: 2rem;
+    }
+
+    .intro p, .beneficios p {
+        font-size: 1rem;
+    }
+}
